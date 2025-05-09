@@ -11,8 +11,10 @@ export const routes: Routes = [
     {path: 'dashboard', component: ExpenseGridComponent},
     {path: 'add-expense', component: ExpenseAddEditComponent},
     {path: 'list', component: ExpenseListComponent},
-    {path: 'edit/:id', component: ExpenseAddEditComponent},
-    {path: '',redirectTo: 'dashboard',pathMatch: 'full'},
+    {path: 'edit/:id',
+    component: ExpenseAddEditComponent,
+    data: { renderMode: 'default' },
+    },
     {path: '**', redirectTo: 'dashboard'}
     
 ];
