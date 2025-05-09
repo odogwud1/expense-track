@@ -1,0 +1,11 @@
+{
+  "expenses": [
+    {
+      "id": 1,
+      "title": "Screen",
+      "category": "Bills",
+      "amount": "300",
+      "date": "2025-05-07T23:00:00.000Z"
+    }
+  ]
+}

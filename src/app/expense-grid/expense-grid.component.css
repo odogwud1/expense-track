@@ -1,0 +1,51 @@
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mat-mdc-header-row{
+  background-color: #767676; 
+}
+
+.card-header {
+  margin-bottom: 16px; 
+  display: flex;
+}
+
+.card-content {
+  margin-bottom: 24px; 
+}
+
+.card {
+  padding-bottom: 24px; 
+}
+
+.expense-table {
+  width: 100%;
+  margin: auto;
+}
+
+#edit-button {
+  margin-right: 16px;
+  align-items: center;
+}
+
+.action-buttons {
+  justify-content: flex-start; /* Or 'center' or 'flex-end' */
+  align-items: center;       /* Vertical alignment */
+  gap: 8px;                 /* Space between buttons */
+}
+
+#delete-button {
+  background-color: #f44336;
+  min-width: 0;
+  height: 48px; /* Adjust as needed */
+  width: 48px;  /* Adjust as needed */
+}
+
+#delete-button mat-icon {
+  font-size: 20px; /* Adjust icon size */
+  height: 20px;
+  width: 20px;
+  color: white; /* Icon color */
+}
