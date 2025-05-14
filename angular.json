@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "expense-track": {
+    "control-project": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/expense-track",
+            "outputPath": "dist/control-project",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -27,18 +27,11 @@
               }
             ],
             "styles": [
-              "src/custom-theme.scss",
+              "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.css"
             ],
             "scripts": [],
-            "server": {
-              "builder": "@angular-devkit/build-angular:server",
-              "options": {
-                "outputPath": "dist/expense-track/server",
-                "main": "src/main.server.ts",
-                "tsConfig": "tsconfig.server.json"
-              }
-            },
+            "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts"
@@ -72,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "expense-track:build:production"
+              "buildTarget": "control-project:build:production"
             },
             "development": {
-              "buildTarget": "expense-track:build:development"
+              "buildTarget": "control-project:build:development"
             }
           },
           "defaultConfiguration": "development"
