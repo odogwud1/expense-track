@@ -7,12 +7,18 @@ import { ExpenseListComponent } from './expense-list/expense-list.component';
 
 
 export const routes: Routes = [
-    {path: '',redirectTo: 'dashboard',pathMatch: 'full'},
-    {path: 'dashboard', component: ExpenseGridComponent},
-    {path: 'add-expense', component: ExpenseAddEditComponent},
-    {path: 'list', component: ExpenseListComponent},
-    {path: 'edit/:id', component: ExpenseAddEditComponent},
-    {path: '',redirectTo: 'dashboard',pathMatch: 'full'},
-    {path: '**', redirectTo: 'dashboard'}
-    
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+  { path: 'dashboard', component: ExpenseGridComponent },
+  { path: 'add-expense', component: ExpenseAddEditComponent },
+  { path: 'list', component: ExpenseListComponent },
+  { path: 'edit/:id',
+    component: ExpenseAddEditComponent,
+    data: {
+      getPrerenderParams: async () => {
+        // Replace this with actual IDs from your data source
+        return [{ id: '1' }];
+      },
+    },
+  },
+  { path: '**', redirectTo: 'dashboard' },
 ];
