@@ -1,0 +1,81 @@
+{
+  "expenses": [
+    {
+      "title": "hjefbjvhbesk",
+      "category": "Bills",
+      "amount": "4444",
+      "date": "2025-05-14T23:00:00.000Z",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "Rent",
+      "category": "Bills",
+      "amount": "2000",
+      "date": "2025-05-07T23:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "title": "Groceries",
+      "category": "Food",
+      "amount": "150",
+      "date": "2025-05-07T23:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "title": "Gas",
+      "category": "Transport",
+      "amount": "50",
+      "date": "2025-05-07T23:00:00.000Z"
+    },
+    {
+      "id": "5",
+      "title": "Internet",
+      "category": "Bills",
+      "amount": "100",
+      "date": "2025-05-07T23:00:00.000Z"
+    },
+    {
+      "id": "6",
+      "title": "Dining Out",
+      "category": "Food",
+      "amount": "80",
+      "date": "2025-05-07T23:00:00.000Z"
+    },
+    {
+      "id": "7",
+      "title": "Gym Membership",
+      "category": "Health",
+      "amount": "60",
+      "date": "2025-05-07T23:00:00.000Z"
+    },
+    {
+      "id": "8",
+      "title": "Car Maintenance",
+      "category": "Transport",
+      "amount": "120",
+      "date": "2025-05-07T23:00:00.000Z"
+    },
+    {
+      "id": "9",
+      "title": "Movie Tickets",
+      "category": "Entertainment",
+      "amount": "40",
+      "date": "2025-05-07T23:00:00.000Z"
+    },
+    {
+      "id": 10,
+      "title": "Track Shoes",
+      "category": "Shopping",
+      "amount": "45",
+      "date": "2025-05-14T23:00:00.000Z"
+    },
+    {
+      "id": 11,
+      "title": "Tryytyyg",
+      "category": "Bills",
+      "amount": "9000000",
+      "date": "2025-05-09T23:00:00.000Z"
+    }
+  ]
+}
