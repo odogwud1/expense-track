@@ -2,44 +2,7 @@
   "expenses": [
     {
       "id": 1,
-      "title": "hjefbjvhbesk",
-      "category": "Bills",
-      "amount": "4444",
-      "date": "2025-05-14T23:00:00.000Z"
-      
-    },
-    {
-      "id": 2,
-      "title": "Rent",
-      "category": "Bills",
-      "amount": "2000",
-      "date": "2025-05-07T23:00:00.000Z"
-    },
-    { 
-      "id": 3,
-      "title": "ysh",
-      "category": "Travel",
-      "amount": "7000",
-      "date": "2025-05-16T23:00:00.000Z"
-      
-    },
-    {
-      "id": 4,
-      "title": "Gas",
-      "category": "Transport",
-      "amount": "50",
-      "date": "2025-05-07T23:00:00.000Z"
-    },
-    {
-      "id": 5,
-      "title": "Internet",
-      "category": "Bills",
-      "amount": "100",
-      "date": "2025-05-07T23:00:00.000Z"
-    },
-    {
-      "id": 6,
-      "title": "Dining Out",
+      "title": "Water",
       "category": "Food",
       "amount": "80",
       "date": "2025-05-07T23:00:00.000Z"

@@ -49,24 +49,20 @@ export class ExpenseAddEditComponent {
       const id= params.get("id");
       console.log("ID from route: ", id);
 
-      effect(() => {
-        const expenses = this.expenseService.expenses();
-        console.log('Effect triggered. Expenses: ', expenses);
+      if(id){
+        this.isEditMode = true;
+        this.expenseID = +id;
+        this.expenseService.getExpenses();
 
-        if (this.isEditMode && expenses.length > 0) {
-          const expense = this.expenseService.getExpenseByID(this.expenseID);
-          console.log('Found expense:', expense);
-
-          if (expense) {
-            this.expenseForm.patchValue({
-              title: expense.title,
-              amount: expense.amount,
-              category: expense.category,
-              date: new Date(expense.date), // Ensure date is properly handled
-            });
+        effect(() => {
+          const expense=this.expenseService.expenses();
+          console.log("Effect triggered. Expenses: ", expense);
+          if(expense.length > 0){
+            this.loadExpenseData(this.expenseID); 
           }
-        }
-      });
+
+        })
+      }
     });
   }
 

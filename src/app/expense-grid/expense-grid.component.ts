@@ -76,10 +76,6 @@ export class ExpenseGridComponent implements AfterViewInit {
     this.snackBar.open("Expense Deleted", "OK", {duration: 2000});
   };
 
-  navigateToEdit(id: number) {
-    this.router.navigate(['/edit', id]);
-    console.log('Preparing to edit expense with ID:', id);
-  }
 }    
     
 
