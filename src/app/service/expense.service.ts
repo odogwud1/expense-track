@@ -44,6 +44,6 @@ export class ExpenseService {
 
   getExpenseByID(id: number) {
     const expenses = this.expenses();
-    return this.expenseSignal().find((expense) => expense.id === id);
+    return this.expenseSignal().find((expense) => expense.id === +id);
   }
 }
