@@ -73,7 +73,7 @@ export class ExpenseDashboardComponent implements OnInit {
   return this.http.get<Expense[]>('http://localhost:3000/expenses').pipe(
     catchError(error => {
       console.error('Error loading expenses', error);
-      return of([]); // Return empty array on error
+      return of([]); 
     })
   );
 }

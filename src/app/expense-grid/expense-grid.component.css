@@ -31,21 +31,13 @@
 }
 
 .action-buttons {
-  justify-content: flex-start; /* Or 'center' or 'flex-end' */
-  align-items: center;       /* Vertical alignment */
-  gap: 8px;                 /* Space between buttons */
-}
+  justify-content: flex-start; 
+  align-items: center;      
+  gap: 8px;  
+}               
 
 #delete-button {
   background-color: #f44336;
   min-width: 0;
-  height: 48px; /* Adjust as needed */
-  width: 48px;  /* Adjust as needed */
 }
 
-#delete-button mat-icon {
-  font-size: 20px; /* Adjust icon size */
-  height: 20px;
-  width: 20px;
-  color: white; /* Icon color */
-}
