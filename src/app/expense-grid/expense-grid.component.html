@@ -35,8 +35,8 @@
         <th mat-header-cell *matHeaderCellDef> Actions </th>
         <td mat-cell *matCellDef="let expense" class="action-buttons">
           <button mat-flat-button id="edit-button" (click)="navigateToEdit(expense.id)">Edit</button>
-          <button mat-mini-fab id="delete-button" (click)="deleteExpense(expense.id)"><mat-icon>delete</mat-icon></button>
-        </td>
+          <button mat-flat-button id="delete-button" (click)="deleteExpense(expense.id)">Delete</button>
+        </td> 
       </ng-container>
     
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

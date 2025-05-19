@@ -14,8 +14,10 @@ export class ExpenseService {
   constructor(private http:HttpClient) {};
 
   getExpenses() {
-    this.http.get<Expense[]>('http://localhost:3000/expenses')
-    .subscribe((expenses) => {this.expenseSignal.set(expenses); });
+    this.http.get<Expense[]>('http://localhost:3000/expenses').subscribe(expenses => {
+      console.log('Fetched expenses:', expenses); // Debugging
+      this.expenseSignal.set(expenses); // Update the signal
+    });
   }
 
   get expenses() {
@@ -41,6 +43,7 @@ export class ExpenseService {
   }
 
   getExpenseByID(id: number) {
+    const expenses = this.expenses();
     return this.expenseSignal().find((expense) => expense.id === id);
   }
 }

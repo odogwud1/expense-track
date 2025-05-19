@@ -8,7 +8,7 @@ import {MatCardModule } from '@angular/material/card';
 import {ExpenseService } from '../service/expense.service';
 import {Expense} from '../models/expense.models';
 import {RouterModule, Router} from '@angular/router';
-import { MatIcon } from '@angular/material/icon';
+import {MatIcon} from '@angular/material/icon';
 
 
 @Component({

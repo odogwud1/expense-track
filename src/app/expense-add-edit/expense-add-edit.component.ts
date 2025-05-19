@@ -47,6 +47,7 @@ export class ExpenseAddEditComponent {
 
     this.route.paramMap.subscribe(params => {
       const id= params.get("id");
+      console.log("ID from route: ", id);
 
       if(id){
         this.isEditMode = true;
@@ -55,14 +56,14 @@ export class ExpenseAddEditComponent {
 
         effect(() => {
           const expense=this.expenseService.expenses();
+          console.log("Effect triggered. Expenses: ", expense);
           if(expense.length > 0){
             this.loadExpenseData(this.expenseID); 
           }
+
         })
       }
     });
-
-    
   }
 
   loadExpenseData(expenseID:number){
@@ -76,6 +77,7 @@ export class ExpenseAddEditComponent {
         category:expense.category,
         date:expense.date
       })
+      console.log("Expense data loaded into form: ", this.expenseForm.value);
     }
   }
 
@@ -99,7 +101,7 @@ export class ExpenseAddEditComponent {
         this.snackBar.open("Expense edited successfully" );
       }
       else{
-      expense.id = this.generateNewId();      
+      expense.id = this.generateNewId();   
       this.expenseService.addExpense(expense);
       this.snackBar.open("Expense added successfully" );
       }

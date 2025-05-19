@@ -62,6 +62,11 @@ export class ExpenseDashboardComponent implements OnInit {
       
     });
   }
+
+  getExpenseByID(id: number): Expense | undefined {
+  const expenses = this.expenses(); 
+  return expenses.find(expense => expense.id === id);
+  } 
  
 
   getExpenses(): Observable<Expense[]> {
